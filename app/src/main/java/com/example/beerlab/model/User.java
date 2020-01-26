@@ -1,9 +1,11 @@
 package com.example.beerlab.model;
 
-import java.time.LocalDate;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Class that holds User for requesting
+ */
 public class User {
     private Long id;
     private String username;
@@ -12,7 +14,9 @@ public class User {
     private String email;
     private List<RoleDto> rolesDto = new LinkedList<>();
     private Double balance;
-    private LocalDate dateOfBirth;
+    private Object dateOfBirth;
+    private List<Order> orders = new LinkedList<>();
+
 
     @Override
     public String toString() {
